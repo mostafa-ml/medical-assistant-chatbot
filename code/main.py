@@ -108,7 +108,7 @@ def main():
         if user_input.strip():
             st.chat_message("user").write(user_input)
 
-            vec_db_path = "vec_db"  # Directory or file path for saving the FAISS database
+            vec_db_path = "vec_db"  # It should be "../vec_db' but it didn't work with streamlit !!!
             # If there is vec_db => load it
             if os.path.exists(vec_db_path):
                 print("loading vec_db...")
