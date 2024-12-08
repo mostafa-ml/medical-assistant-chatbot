@@ -99,7 +99,6 @@ def main():
         for msg in st.session_state.chat_history:
             st.chat_message(msg["role"]).write(msg['content'])
 
-
     def clear_chat():
         st.session_state.chat_history = []
     st.sidebar.button(label="Clear chat", on_click=clear_chat)
@@ -109,7 +108,7 @@ def main():
         if user_input.strip():
             st.chat_message("user").write(user_input)
 
-            vec_db_path = "..\\vec_db"  # Directory or file path for saving the FAISS database
+            vec_db_path = "vec_db"  # Directory or file path for saving the FAISS database
             # If there is vec_db => load it
             if os.path.exists(vec_db_path):
                 print("loading vec_db...")
