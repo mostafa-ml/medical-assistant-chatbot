@@ -117,6 +117,7 @@ def main():
                     vec_db = load_vec_db(vec_db_path)
             else:
                 vec_db = None
+                print("vec_db file path error")
 
             with st.spinner("AI is thinking..."):
 
