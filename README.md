@@ -26,21 +26,17 @@ For each disease, it provides extensive details on:
 - Prevention  
 ...and more.  
 
-
 ## 🚀 Features  
 - **Interactive Medical Assistance**: Engages in dynamic conversations to provide user-friendly medical information.  
 - **Efficient Document Retrieval**: Uses FAISS for fast and accurate retrieval of relevant content.  
 - **Context-Aware Responses**: Generates precise answers tailored to user queries.  
 - **Streamlit Deployment**: Fully deployed on a web app for easy access.  
 
-
 ## 🛠️ Technology Stack  
 - **RAG Architecture**  
 - **Llama3-70B-8192** as the core language model.  
 - **FAISS** as the vector database for document similarity search.  
 - **Streamlit** for seamless web app deployment.  
-
----
 
 ## 📂 Repository Contents  
 - `/code`: Main code for the application.  
