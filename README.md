@@ -1,8 +1,7 @@
 # 🩺 Medical Assistant Chatbot
 Your AI Medical Assistant 👨‍⚕️
 
-[🌐 Live App](https://medical-assistant-chatbot-by-mostafa.streamlit.app/)
-
+**🌐Live App:** [Medical Assistant Chatbot](https://medical-assistant-chatbot-by-mostafa.streamlit.app/)
 ---
 
 ## 📖 Overview  
