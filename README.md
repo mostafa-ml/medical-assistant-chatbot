@@ -4,7 +4,7 @@ Your AI Medical Assistant 👨‍⚕️
 **🌐Live App:** [Medical Assistant Chatbot](https://medical-assistant-chatbot-by-mostafa.streamlit.app/)
 
 ## 📖 Overview  
-The **Medical Assistant Chatbot** is an AI-driven tool designed to provide comprehensive medical information and assistance. Leveraging **Retrieval-Augmented Generation (RAG)** architecture, it integrates the power of **Llama3-70B LLM** and **FAISS vector database** for efficient document retrieval and context-aware responses.  
+The **Medical Assistant Chatbot** is an AI-driven tool designed to provide comprehensive medical information and assistance. Leveraging **Retrieval-Augmented Generation (RAG)** architecture, it integrates the power of **DeepSeek-R1** and **Llama3-70B** LLMs and **FAISS vector database** for efficient document retrieval and context-aware responses.  
 
 This chatbot offers detailed insights on ten critical diseases, including:  
 - **Alzheimer’s**  
@@ -34,7 +34,7 @@ For each disease, it provides extensive details on:
 
 ## 🛠️ Technology Stack  
 - **RAG Architecture**  
-- **Llama3-70B-8192** as the core language model.  
+- **DeepSeek-R1** and **Llama3-70B-8192** as the core language model.  
 - **FAISS** as the vector database for document similarity search.  
 - **Streamlit** for seamless web app deployment.  
 
