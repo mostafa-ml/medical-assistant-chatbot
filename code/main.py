@@ -71,10 +71,13 @@ def get_chat_response(prompt, chat_history, sys_msg_content, model_name, tempera
 
     try:
         stream = client.chat.completions.create(
-            messages=messages,
             model=model_name,
+            messages=messages,
             temperature=temperature,
-            stream=True
+            max_completion_tokens=4096,
+            top_p=0.95,
+            stream=True,
+            stop=None
         )
         for chunk in stream:
             if chunk.choices[0].delta.content:
@@ -88,8 +91,8 @@ def main():
     st.title("Your AI Medical Assistant 👨‍⚕️", anchor=False)
 
     # sidebar controls
-    model_name = st.sidebar.selectbox(label="Choose the model", options=["llama3-70b-8192", "gemma2-9b-it", "mixtral-8x7b-32768"], index=0)
-    temperature = st.sidebar.slider(label="Set Temperature", min_value=0.0, max_value=1.0, value=0.7, step=0.1)
+    model_name = st.sidebar.selectbox(label="Choose the model", options=["deepseek-r1-distill-llama-70b", "llama3-70b-8192", "gemma2-9b-it", "mixtral-8x7b-32768"], index=0)
+    temperature = st.sidebar.slider(label="Set Temperature", min_value=0.0, max_value=1.0, value=0.6, step=0.1)
     MAX_CHAT_HISTORY_LENGTH = int(st.sidebar.number_input(label="Max history length", min_value=1, max_value=10, value=4))
 
     # Create session state to store and load the chat history
